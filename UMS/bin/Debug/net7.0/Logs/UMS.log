@@ -1,0 +1,538 @@
+2023-05-22 22:37:29.5036|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQ7VEH9U6" received FIN.
+2023-05-22 22:37:29.5310|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQ7VEH9U7" received FIN.
+2023-05-22 22:37:29.5422|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQ7VEH9U8" accepted.
+2023-05-22 22:37:29.5445|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQ7VEH9U6" disconnecting.
+2023-05-22 22:37:29.5801|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQ7VEH9U8" started.
+2023-05-22 22:37:29.5716|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQ7VEH9U7" disconnecting.
+2023-05-22 22:37:29.5814|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQ7VEH9U6" sending FIN because: "The client closed the connection."
+2023-05-22 22:37:29.5814|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQ7VEH9U7" sending FIN because: "The client closed the connection."
+2023-05-22 22:37:29.5830|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQ7VEH9U7" stopped.
+2023-05-22 22:37:29.5830|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQ7VEH9U6" stopped.
+2023-05-22 22:37:29.6501|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMQQQ7VEH9U8 established using the following protocol: Tls12
+2023-05-22 22:37:29.6545|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7114/api/v1/user application/json 328
+2023-05-22 22:37:29.6548|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-22 22:37:29.6601|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/v1/user'
+2023-05-22 22:37:29.6626|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UMS.Controllers.UsersController.Add (UMS)' with route pattern 'api/v1/user' is valid for the request path '/api/v1/user'
+2023-05-22 22:37:29.6633|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UMS.Controllers.UsersController.Add (UMS)'
+2023-05-22 22:37:29.6670|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-05-22 22:37:29.6700|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UMS.Controllers.UsersController.Add (UMS)'
+2023-05-22 22:37:29.6887|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Add", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(UMS.Entities.Users) on controller UMS.Controllers.UsersController (UMS).
+2023-05-22 22:37:29.6893|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-05-22 22:37:29.6893|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-05-22 22:37:29.6893|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-05-22 22:37:29.6893|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-05-22 22:37:29.6893|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-05-22 22:37:29.6905|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UMS.Controllers.UsersController (UMS)
+2023-05-22 22:37:29.7578|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-22 22:37:29.7666|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UMS.Controllers.UsersController (UMS)
+2023-05-22 22:37:29.7685|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'user' of type 'UMS.Entities.Users' ...
+2023-05-22 22:37:29.7695|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'user' of type 'UMS.Entities.Users' using the name '' in request data ...
+2023-05-22 22:37:29.7699|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-05-22 22:37:29.7767|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQQ7VEH9U8", Request id "0HMQQQ7VEH9U8:00000001": started reading request body.
+2023-05-22 22:37:29.7769|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQQ7VEH9U8", Request id "0HMQQQ7VEH9U8:00000001": done reading request body.
+2023-05-22 22:37:29.7820|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter threw an exception: 'A' is an invalid start of a value. Path: $.recordStatus | LineNumber: 7 | BytePositionInLine: 18.
+2023-05-22 22:37:29.7820|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'user' of type 'UMS.Entities.Users'.
+2023-05-22 22:37:29.7820|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'user' of type 'UMS.Entities.Users'.
+2023-05-22 22:37:29.7820|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'user' of type 'UMS.Entities.Users' ...
+2023-05-22 22:37:29.7850|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'user' of type 'UMS.Entities.Users'.
+2023-05-22 22:37:29.7850|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-05-22 22:37:29.7850|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-05-22 22:37:29.7850|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-05-22 22:37:29.7850|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response.
+2023-05-22 22:37:29.7861|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-05-22 22:37:29.7861|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2023-05-22 22:37:29.7861|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-05-22 22:37:29.7861|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-05-22 22:37:29.7861|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-05-22 22:37:29.7861|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-05-22 22:37:29.7868|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2023-05-22 22:37:29.7881|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-05-22 22:37:29.7881|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2023-05-22 22:37:29.7889|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'.
+2023-05-22 22:37:29.7889|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-05-22 22:37:29.7889|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-05-22 22:37:29.7909|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2023-05-22 22:37:29.7909|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-05-22 22:37:29.7909|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-05-22 22:37:29.7921|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UMS.Controllers.UsersController.Add (UMS) in 101.3111ms
+2023-05-22 22:37:29.7921|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UMS.Controllers.UsersController.Add (UMS)'
+2023-05-22 22:37:29.7921|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQ7VEH9U8" completed keep alive response.
+2023-05-22 22:37:29.7929|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7114/api/v1/user application/json 328 - 400 - application/problem+json;+charset=utf-8 138.6388ms
+2023-05-22 22:38:00.4995|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQ7VEH9U8" received FIN.
+2023-05-22 22:38:00.5270|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQ7VEH9U8" sending FIN because: "The client closed the connection."
+2023-05-22 22:38:00.5287|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQ7VEH9U8" disconnecting.
+2023-05-22 22:38:00.5342|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQ7VEH9U8" stopped.
+2023-05-22 22:51:34.7694|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-05-22 22:51:34.8029|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-05-22 22:51:35.0069|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7114
+2023-05-22 22:51:35.0069|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5020
+2023-05-22 22:51:35.0069|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly UMS
+2023-05-22 22:51:35.0069|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-05-22 22:51:35.0076|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-05-22 22:51:35.0076|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/khantko/Projects/UMS/UMS
+2023-05-22 22:51:35.0076|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-05-22 22:51:35.0221|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQG4VQITF" accepted.
+2023-05-22 22:51:35.0225|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQG4VQITF" started.
+2023-05-22 22:51:36.0207|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQG4VQITF" received FIN.
+2023-05-22 22:51:36.0270|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-22 22:51:36.0373|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQG4VQITF" stopped.
+2023-05-22 22:51:36.0408|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQG4VQITF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-22 22:51:36.0532|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQG4VQITG" accepted.
+2023-05-22 22:51:36.0534|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQG4VQITG" started.
+2023-05-22 22:51:36.1094|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQG4VQITH" accepted.
+2023-05-22 22:51:36.1094|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQG4VQITH" started.
+2023-05-22 22:51:36.1109|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMQQQG4VQITG established using the following protocol: Tls12
+2023-05-22 22:51:36.1258|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMQQQG4VQITH established using the following protocol: Tls12
+2023-05-22 22:51:36.1349|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7114/swagger/index.html - -
+2023-05-22 22:51:36.1352|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-05-22 22:51:36.1352|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-22 22:51:36.1465|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-05-22 22:51:36.1465|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-05-22 22:51:36.2030|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQG4VQITG" completed keep alive response.
+2023-05-22 22:51:36.2039|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 69.3707ms
+2023-05-22 22:51:36.2574|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-05-22 22:51:36.2574|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-22 22:51:36.2574|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-05-22 22:51:36.2574|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-05-22 22:51:36.3113|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQG4VQITG" completed keep alive response.
+2023-05-22 22:51:36.3113|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 54.0183ms
+2023-05-22 22:51:40.3522|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7114/api/v1/user - -
+2023-05-22 22:51:40.3522|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-22 22:51:40.3565|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/v1/user'
+2023-05-22 22:51:40.3586|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UMS.Controllers.UsersController.Get (UMS)' with route pattern 'api/v1/user' is valid for the request path '/api/v1/user'
+2023-05-22 22:51:40.3586|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UMS.Controllers.UsersController.Get (UMS)'
+2023-05-22 22:51:40.3623|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-05-22 22:51:40.3665|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UMS.Controllers.UsersController.Get (UMS)'
+2023-05-22 22:51:40.3813|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller UMS.Controllers.UsersController (UMS).
+2023-05-22 22:51:40.3813|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-05-22 22:51:40.3813|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-05-22 22:51:40.3813|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-05-22 22:51:40.3822|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-05-22 22:51:40.3822|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-05-22 22:51:40.3834|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UMS.Controllers.UsersController (UMS)
+2023-05-22 22:51:40.4533|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-22 22:51:40.4618|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UMS.Controllers.UsersController (UMS)
+2023-05-22 22:51:40.4618|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-05-22 22:51:40.4618|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-05-22 22:51:40.4618|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-05-22 22:51:40.4618|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-05-22 22:51:40.4635|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method UMS.Controllers.UsersController.Get (UMS) - Validation state: Valid
+2023-05-22 22:51:40.4652|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method UMS.Controllers.UsersController.Get (UMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4809ms.
+2023-05-22 22:51:40.4652|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-05-22 22:51:40.4652|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-05-22 22:51:40.4652|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-05-22 22:51:40.4652|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-05-22 22:51:40.4652|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-05-22 22:51:40.4652|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-05-22 22:51:40.4652|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-05-22 22:51:40.4674|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-05-22 22:51:40.4674|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2023-05-22 22:51:40.4674|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-05-22 22:51:40.4674|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2023-05-22 22:51:40.4684|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-22 22:51:40.4684|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[UMS.Entities.Users, UMS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-05-22 22:51:40.6948|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.5 initialized 'UMSContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+2023-05-22 22:51:40.7248|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Users>()'
+2023-05-22 22:51:40.7976|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Users>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Users.ID (no field, Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Users.CreatedBy (_createdBy, string) Required, 1], [Property: Users.CreatedDate (_createdDate, DateTime) Required, 2], [Property: Users.Email (_email, string) Required, 3], [Property: Users.IsActive (_isActive, bool) Required, 4], [Property: Users.LoginID (_loginID, string) Required, 5], [Property: Users.ModifiedBy (_modifiedBy, string) Required, 6], [Property: Users.ModifiedDate (_modifiedDate, DateTime) Required, 7], [Property: Users.Password (_password, string) Required, 8], [Property: Users.RecordStatus (_recordStatus, int) Required, 9], [Property: Users.UserName (_userName, string) Required, 10] }
+        SELECT u.ID, u.CreatedBy, u.CreatedDate, u.Email, u.IsActive, u.LoginID, u.ModifiedBy, u.ModifiedDate, u.Password, u.RecordStatus, u.UserName
+        FROM Users AS u), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Users>, 
+    UMS.Entities.Data.UMSContext, 
+    False, 
+    False, 
+    True
+)'
+2023-05-22 22:51:40.8102|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-05-22 22:51:40.8102|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection.
+2023-05-22 22:51:40.8280|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (15ms).
+2023-05-22 22:51:40.8312|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (20ms).
+2023-05-22 22:51:40.8319|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (22ms).
+2023-05-22 22:51:40.8329|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'UMS' on server '127.0.0.1'.
+2023-05-22 22:51:40.9853|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'UMS' on server '127.0.0.1'.
+2023-05-22 22:51:40.9886|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[ID], [u].[CreatedBy], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[LoginID], [u].[ModifiedBy], [u].[ModifiedDate], [u].[Password], [u].[RecordStatus], [u].[UserName]
+FROM [Users] AS [u]
+2023-05-22 22:51:41.0111|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[ID], [u].[CreatedBy], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[LoginID], [u].[ModifiedBy], [u].[ModifiedDate], [u].[Password], [u].[RecordStatus], [u].[UserName]
+FROM [Users] AS [u]
+2023-05-22 22:51:41.0293|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UMSContext' started tracking 'Users' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 22:51:41.0441|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UMSContext' started tracking 'Users' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 22:51:41.0456|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'UMS' on server '127.0.0.1'.
+2023-05-22 22:51:41.0484|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'UMS' on server '127.0.0.1' is being disposed after spending 35ms reading results.
+2023-05-22 22:51:41.0494|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'UMS' on server '127.0.0.1'.
+2023-05-22 22:51:41.0521|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'UMS' on server '127.0.0.1' (2ms).
+2023-05-22 22:51:41.0547|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-05-22 22:51:41.0547|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-05-22 22:51:41.0547|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-05-22 22:51:41.0559|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UMS.Controllers.UsersController.Get (UMS) in 672.5138ms
+2023-05-22 22:51:41.0559|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UMS.Controllers.UsersController.Get (UMS)'
+2023-05-22 22:51:41.0559|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQG4VQITG" completed keep alive response.
+2023-05-22 22:51:41.0570|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UMSContext' disposed.
+2023-05-22 22:51:41.0598|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'UMS' on server '127.0.0.1'.
+2023-05-22 22:51:41.0607|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (0ms).
+2023-05-22 22:51:41.0607|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7114/api/v1/user - - - 200 - application/json;+charset=utf-8 708.6863ms
+2023-05-22 22:52:07.0495|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQG4VQITH" received FIN.
+2023-05-22 22:52:07.0521|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQG4VQITH" disconnecting.
+2023-05-22 22:52:07.0605|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQG4VQITH" sending FIN because: "The client closed the connection."
+2023-05-22 22:52:07.0634|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQG4VQITH" stopped.
+2023-05-22 22:52:15.9357|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-05-22 22:52:15.9725|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-05-22 22:52:16.1847|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7114
+2023-05-22 22:52:16.1847|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5020
+2023-05-22 22:52:16.1847|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly UMS
+2023-05-22 22:52:16.1847|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-05-22 22:52:16.1852|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-05-22 22:52:16.1852|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/khantko/Projects/UMS/UMS
+2023-05-22 22:52:16.1852|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-05-22 22:52:16.2121|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQGH8KP4R" accepted.
+2023-05-22 22:52:16.2125|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQGH8KP4R" started.
+2023-05-22 22:52:17.2089|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQGH8KP4R" received FIN.
+2023-05-22 22:52:17.2132|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-22 22:52:17.2212|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQGH8KP4R" stopped.
+2023-05-22 22:52:17.2233|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQGH8KP4R" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-22 22:52:17.2380|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQGH8KP4S" accepted.
+2023-05-22 22:52:17.2381|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQGH8KP4S" started.
+2023-05-22 22:52:17.2898|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQGH8KP4T" accepted.
+2023-05-22 22:52:17.2898|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQGH8KP4T" started.
+2023-05-22 22:52:17.2914|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMQQQGH8KP4S established using the following protocol: Tls12
+2023-05-22 22:52:17.3060|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMQQQGH8KP4T established using the following protocol: Tls12
+2023-05-22 22:52:17.3179|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7114/swagger/index.html - -
+2023-05-22 22:52:17.3183|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-05-22 22:52:17.3183|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-22 22:52:17.3292|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-05-22 22:52:17.3292|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-05-22 22:52:17.3861|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQGH8KP4S" completed keep alive response.
+2023-05-22 22:52:17.3870|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 69.5027ms
+2023-05-22 22:52:17.5199|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-05-22 22:52:17.5199|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-22 22:52:17.5199|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-05-22 22:52:17.5199|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-05-22 22:52:57.1564|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQGH8KP4S" completed keep alive response.
+2023-05-22 22:52:57.1825|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 39662.7328ms
+2023-05-22 22:53:09.0467|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQGH8KP4T" received FIN.
+2023-05-22 22:53:09.0487|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQGH8KP4T" disconnecting.
+2023-05-22 22:53:09.0487|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQGH8KP4T" sending FIN because: "The client closed the connection."
+2023-05-22 22:53:09.0510|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQGH8KP4T" stopped.
+2023-05-22 22:53:40.0514|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQGH8KP4S" received FIN.
+2023-05-22 22:53:40.0557|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQGH8KP4S" disconnecting.
+2023-05-22 22:53:40.0557|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQGH8KP4S" sending FIN because: "The client closed the connection."
+2023-05-22 22:53:40.0586|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQGH8KP4S" stopped.
+2023-05-22 22:54:12.6980|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-05-22 22:54:12.7359|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-05-22 22:54:12.9301|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7114
+2023-05-22 22:54:12.9301|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5020
+2023-05-22 22:54:12.9301|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly UMS
+2023-05-22 22:54:12.9301|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-05-22 22:54:12.9301|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-05-22 22:54:12.9301|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/khantko/Projects/UMS/UMS
+2023-05-22 22:54:12.9301|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-05-22 22:54:12.9353|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQHK1PSF5" accepted.
+2023-05-22 22:54:12.9353|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQHK1PSF5" started.
+2023-05-22 22:54:13.9294|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQHK1PSF5" received FIN.
+2023-05-22 22:54:13.9337|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-22 22:54:13.9456|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQHK1PSF5" stopped.
+2023-05-22 22:54:13.9474|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQHK1PSF5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-22 22:54:13.9578|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQHK1PSF6" accepted.
+2023-05-22 22:54:13.9581|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQHK1PSF6" started.
+2023-05-22 22:54:14.0354|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQHK1PSF7" accepted.
+2023-05-22 22:54:14.0354|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQHK1PSF7" started.
+2023-05-22 22:54:14.0368|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMQQQHK1PSF6 established using the following protocol: Tls12
+2023-05-22 22:54:14.0515|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMQQQHK1PSF7 established using the following protocol: Tls12
+2023-05-22 22:54:14.0616|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7114/swagger/index.html - -
+2023-05-22 22:54:14.0620|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-05-22 22:54:14.0620|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-22 22:54:14.0721|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-05-22 22:54:14.0721|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-05-22 22:54:14.1296|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQHK1PSF6" completed keep alive response.
+2023-05-22 22:54:14.1306|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 69.3387ms
+2023-05-22 22:54:14.2654|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-05-22 22:54:14.2654|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-22 22:54:14.2654|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-05-22 22:54:14.2654|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-05-22 22:56:20.7098|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-05-22 22:56:20.7423|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-05-22 22:56:20.9567|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7114
+2023-05-22 22:56:20.9567|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5020
+2023-05-22 22:56:20.9567|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly UMS
+2023-05-22 22:56:20.9567|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-05-22 22:56:20.9567|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-05-22 22:56:20.9567|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/khantko/Projects/UMS/UMS
+2023-05-22 22:56:20.9567|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-05-22 22:56:20.9650|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQIQ6PE6D" accepted.
+2023-05-22 22:56:20.9650|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQIQ6PE6D" started.
+2023-05-22 22:56:21.9620|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQIQ6PE6D" received FIN.
+2023-05-22 22:56:21.9676|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-22 22:56:21.9769|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQIQ6PE6D" stopped.
+2023-05-22 22:56:21.9815|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQIQ6PE6D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-22 22:56:21.9918|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQIQ6PE6E" accepted.
+2023-05-22 22:56:21.9918|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQIQ6PE6E" started.
+2023-05-22 22:56:22.0428|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQIQ6PE6F" accepted.
+2023-05-22 22:56:22.0428|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQIQ6PE6F" started.
+2023-05-22 22:56:22.0444|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMQQQIQ6PE6E established using the following protocol: Tls12
+2023-05-22 22:56:22.0589|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMQQQIQ6PE6F established using the following protocol: Tls12
+2023-05-22 22:56:22.0698|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7114/swagger/index.html - -
+2023-05-22 22:56:22.0698|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-05-22 22:56:22.0698|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-22 22:56:22.0814|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-05-22 22:56:22.0814|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-05-22 22:56:22.1382|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQIQ6PE6E" completed keep alive response.
+2023-05-22 22:56:22.1390|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 69.6400ms
+2023-05-22 22:56:22.2636|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-05-22 22:56:22.2636|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-22 22:56:22.2636|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-05-22 22:56:22.2636|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-05-22 22:56:41.3356|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQIQ6PE6E" completed keep alive response.
+2023-05-22 22:56:41.3356|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 19072.3395ms
+2023-05-22 22:56:52.9706|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQIQ6PE6F" received FIN.
+2023-05-22 22:56:52.9766|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQIQ6PE6F" disconnecting.
+2023-05-22 22:56:52.9766|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQIQ6PE6F" sending FIN because: "The client closed the connection."
+2023-05-22 22:56:52.9777|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQIQ6PE6F" stopped.
+2023-05-22 22:57:23.8746|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQIQ6PE6E" received FIN.
+2023-05-22 22:57:23.8998|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQIQ6PE6E" sending FIN because: "The client closed the connection."
+2023-05-22 22:57:23.8998|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQIQ6PE6E" disconnecting.
+2023-05-22 22:57:23.9017|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQIQ6PE6E" stopped.
+2023-05-22 22:59:46.9708|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-05-22 22:59:47.0056|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-05-22 22:59:47.2813|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7114
+2023-05-22 22:59:47.2813|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5020
+2023-05-22 22:59:47.2813|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly UMS
+2023-05-22 22:59:47.2813|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-05-22 22:59:47.2813|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-05-22 22:59:47.2813|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/khantko/Projects/UMS/UMS
+2023-05-22 22:59:47.2813|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-05-22 22:59:47.3214|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQKNMODK9" accepted.
+2023-05-22 22:59:47.3214|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQKNMODK9" started.
+2023-05-22 22:59:48.3173|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQKNMODK9" received FIN.
+2023-05-22 22:59:48.3210|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-22 22:59:48.3304|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQKNMODK9" stopped.
+2023-05-22 22:59:48.3324|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQKNMODK9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-22 22:59:48.3448|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQKNMODKA" accepted.
+2023-05-22 22:59:48.3452|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQKNMODKA" started.
+2023-05-22 22:59:48.3991|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQKNMODKB" accepted.
+2023-05-22 22:59:48.3991|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQKNMODKB" started.
+2023-05-22 22:59:48.4005|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMQQQKNMODKA established using the following protocol: Tls12
+2023-05-22 22:59:48.4150|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMQQQKNMODKB established using the following protocol: Tls12
+2023-05-22 22:59:48.4244|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7114/swagger/index.html - -
+2023-05-22 22:59:48.4244|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-05-22 22:59:48.4244|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-22 22:59:48.4357|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-05-22 22:59:48.4357|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-05-22 22:59:48.4921|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQKNMODKA" completed keep alive response.
+2023-05-22 22:59:48.4921|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 68.9076ms
+2023-05-22 22:59:48.6260|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-05-22 22:59:48.6261|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-22 22:59:48.6261|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-05-22 22:59:48.6261|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-05-22 23:01:03.9940|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-05-22 23:01:04.0337|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-05-22 23:01:04.2956|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7114
+2023-05-22 23:01:04.2956|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5020
+2023-05-22 23:01:04.2956|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly UMS
+2023-05-22 23:01:04.2960|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-05-22 23:01:04.2960|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-05-22 23:01:04.2960|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/khantko/Projects/UMS/UMS
+2023-05-22 23:01:04.2960|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-05-22 23:01:04.3047|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQLEKTR91" accepted.
+2023-05-22 23:01:04.3050|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQLEKTR91" started.
+2023-05-22 23:01:05.3022|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQLEKTR91" received FIN.
+2023-05-22 23:01:05.3072|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-22 23:01:05.3155|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQLEKTR91" stopped.
+2023-05-22 23:01:05.3174|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQQLEKTR91" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-22 23:01:05.3584|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQLEKTR92" accepted.
+2023-05-22 23:01:05.3584|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQLEKTR92" started.
+2023-05-22 23:01:05.4105|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQLEKTR93" accepted.
+2023-05-22 23:01:05.4105|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQLEKTR93" started.
+2023-05-22 23:01:05.4121|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMQQQLEKTR92 established using the following protocol: Tls12
+2023-05-22 23:01:05.4267|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMQQQLEKTR93 established using the following protocol: Tls12
+2023-05-22 23:01:05.4368|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7114/swagger/index.html - -
+2023-05-22 23:01:05.4372|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-05-22 23:01:05.4372|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-22 23:01:05.4479|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-05-22 23:01:05.4479|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-05-22 23:01:05.5080|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQQLEKTR92" completed keep alive response.
+2023-05-22 23:01:05.5080|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 72.4750ms
+2023-05-22 23:01:05.6417|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-05-22 23:01:05.6419|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-22 23:01:05.6419|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-05-22 23:01:05.6419|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-05-23 00:30:30.4838|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-05-23 00:30:30.5193|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-05-23 00:30:30.7750|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7114
+2023-05-23 00:30:30.7757|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5020
+2023-05-23 00:30:30.7757|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly UMS
+2023-05-23 00:30:30.7757|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-05-23 00:30:30.7757|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-05-23 00:30:30.7757|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/khantko/Projects/UMS/UMS
+2023-05-23 00:30:30.7757|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-05-23 00:30:30.8042|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQS7DVRHE3" accepted.
+2023-05-23 00:30:30.8045|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQS7DVRHE3" started.
+2023-05-23 00:30:31.8017|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQS7DVRHE3" received FIN.
+2023-05-23 00:30:31.8059|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-23 00:30:31.8135|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQS7DVRHE3" stopped.
+2023-05-23 00:30:31.8164|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQS7DVRHE3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-23 00:30:31.8593|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQS7DVRHE4" accepted.
+2023-05-23 00:30:31.8595|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQS7DVRHE4" started.
+2023-05-23 00:30:31.9058|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQS7DVRHE5" accepted.
+2023-05-23 00:30:31.9058|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQS7DVRHE5" started.
+2023-05-23 00:30:31.9070|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMQQS7DVRHE4 established using the following protocol: Tls12
+2023-05-23 00:30:31.9218|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMQQS7DVRHE5 established using the following protocol: Tls12
+2023-05-23 00:30:31.9314|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7114/swagger/index.html - -
+2023-05-23 00:30:31.9317|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-05-23 00:30:31.9317|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-23 00:30:31.9426|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-05-23 00:30:31.9426|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-05-23 00:30:31.9993|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQS7DVRHE4" completed keep alive response.
+2023-05-23 00:30:32.0000|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 69.1102ms
+2023-05-23 00:30:32.1338|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-05-23 00:30:32.1338|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-23 00:30:32.1338|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-05-23 00:30:32.1338|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-05-23 00:30:32.1851|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQS7DVRHE4" completed keep alive response.
+2023-05-23 00:30:32.1851|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 51.3592ms
+2023-05-23 00:30:43.0971|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7114/api/v1/user - -
+2023-05-23 00:30:43.0975|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-23 00:30:43.1029|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/v1/user'
+2023-05-23 00:30:43.1060|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'UMS.Controllers.UsersController.Get (UMS)' with route pattern 'api/v1/user' is valid for the request path '/api/v1/user'
+2023-05-23 00:30:43.1067|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'UMS.Controllers.UsersController.Get (UMS)'
+2023-05-23 00:30:43.1096|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-05-23 00:30:43.1133|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'UMS.Controllers.UsersController.Get (UMS)'
+2023-05-23 00:30:43.1260|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller UMS.Controllers.UsersController (UMS).
+2023-05-23 00:30:43.1266|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-05-23 00:30:43.1266|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-05-23 00:30:43.1266|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-05-23 00:30:43.1266|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-05-23 00:30:43.1266|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-05-23 00:30:43.1277|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller UMS.Controllers.UsersController (UMS)
+2023-05-23 00:30:43.2000|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-23 00:30:43.2100|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller UMS.Controllers.UsersController (UMS)
+2023-05-23 00:30:43.2100|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-05-23 00:30:43.2100|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-05-23 00:30:43.2104|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-05-23 00:30:43.2104|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-05-23 00:30:43.2117|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method UMS.Controllers.UsersController.Get (UMS) - Validation state: Valid
+2023-05-23 00:30:43.2135|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method UMS.Controllers.UsersController.Get (UMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4722ms.
+2023-05-23 00:30:43.2135|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-05-23 00:30:43.2135|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-05-23 00:30:43.2135|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-05-23 00:30:43.2135|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-05-23 00:30:43.2135|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-05-23 00:30:43.2135|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-05-23 00:30:43.2135|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-05-23 00:30:43.2154|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-05-23 00:30:43.2169|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2023-05-23 00:30:43.2169|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-05-23 00:30:43.2169|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2023-05-23 00:30:43.2169|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-23 00:30:43.2169|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[UMS.Entities.Users, UMS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-05-23 00:30:43.4359|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.5 initialized 'UMSContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+2023-05-23 00:30:43.4626|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Users>()'
+2023-05-23 00:30:43.5353|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Users>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Users.ID (no field, Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Users.CreatedBy (_createdBy, string) Required, 1], [Property: Users.CreatedDate (_createdDate, DateTime) Required, 2], [Property: Users.Email (_email, string) Required, 3], [Property: Users.IsActive (_isActive, bool) Required, 4], [Property: Users.LoginID (_loginID, string) Required, 5], [Property: Users.ModifiedBy (_modifiedBy, string) Required, 6], [Property: Users.ModifiedDate (_modifiedDate, DateTime) Required, 7], [Property: Users.Password (_password, string) Required, 8], [Property: Users.RecordStatus (_recordStatus, int) Required, 9], [Property: Users.UserName (_userName, string) Required, 10] }
+        SELECT u.ID, u.CreatedBy, u.CreatedDate, u.Email, u.IsActive, u.LoginID, u.ModifiedBy, u.ModifiedDate, u.Password, u.RecordStatus, u.UserName
+        FROM Users AS u), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Users>, 
+    UMS.Entities.Data.UMSContext, 
+    False, 
+    False, 
+    True
+)'
+2023-05-23 00:30:43.5478|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-05-23 00:30:43.5485|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection.
+2023-05-23 00:30:43.5921|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (42ms).
+2023-05-23 00:30:43.5953|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (47ms).
+2023-05-23 00:30:43.5961|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (49ms).
+2023-05-23 00:30:43.5971|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'UMS' on server '127.0.0.1'.
+2023-05-23 00:30:43.7269|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'UMS' on server '127.0.0.1'.
+2023-05-23 00:30:43.7300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[ID], [u].[CreatedBy], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[LoginID], [u].[ModifiedBy], [u].[ModifiedDate], [u].[Password], [u].[RecordStatus], [u].[UserName]
+FROM [Users] AS [u]
+2023-05-23 00:30:43.7521|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[ID], [u].[CreatedBy], [u].[CreatedDate], [u].[Email], [u].[IsActive], [u].[LoginID], [u].[ModifiedBy], [u].[ModifiedDate], [u].[Password], [u].[RecordStatus], [u].[UserName]
+FROM [Users] AS [u]
+2023-05-23 00:30:43.7693|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UMSContext' started tracking 'Users' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-23 00:30:43.7833|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UMSContext' started tracking 'Users' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-23 00:30:43.7847|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'UMS' on server '127.0.0.1'.
+2023-05-23 00:30:43.7875|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'UMS' on server '127.0.0.1' is being disposed after spending 33ms reading results.
+2023-05-23 00:30:43.7875|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'UMS' on server '127.0.0.1'.
+2023-05-23 00:30:43.7908|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'UMS' on server '127.0.0.1' (2ms).
+2023-05-23 00:30:43.7934|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-05-23 00:30:43.7934|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-05-23 00:30:43.7934|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-05-23 00:30:43.7946|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action UMS.Controllers.UsersController.Get (UMS) in 666.6477ms
+2023-05-23 00:30:43.7946|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'UMS.Controllers.UsersController.Get (UMS)'
+2023-05-23 00:30:43.7946|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQS7DVRHE4" completed keep alive response.
+2023-05-23 00:30:43.7957|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UMSContext' disposed.
+2023-05-23 00:30:43.7973|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'UMS' on server '127.0.0.1'.
+2023-05-23 00:30:43.7980|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (0ms).
+2023-05-23 00:30:43.7980|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7114/api/v1/user - - - 200 - application/json;+charset=utf-8 701.1276ms
+2023-05-23 00:46:18.1863|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-05-23 00:46:18.2210|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-05-23 00:46:18.4299|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7114
+2023-05-23 00:46:18.4306|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5020
+2023-05-23 00:46:18.4312|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly UMS
+2023-05-23 00:46:18.4312|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-05-23 00:46:18.4312|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-05-23 00:46:18.4319|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/khantko/Projects/UMS/UMS
+2023-05-23 00:46:18.4319|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-05-23 00:46:18.4661|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQSG8DF0CD" accepted.
+2023-05-23 00:46:18.4661|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQSG8DF0CD" started.
+2023-05-23 00:46:19.4631|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQSG8DF0CD" received FIN.
+2023-05-23 00:46:19.4669|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-23 00:46:19.4751|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQSG8DF0CD" stopped.
+2023-05-23 00:46:19.4773|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQSG8DF0CD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-23 00:46:19.4998|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQSG8DF0CE" accepted.
+2023-05-23 00:46:19.5000|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQSG8DF0CE" started.
+2023-05-23 00:46:19.5478|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQSG8DF0CF" accepted.
+2023-05-23 00:46:19.5478|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQSG8DF0CF" started.
+2023-05-23 00:46:19.5494|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMQQSG8DF0CE established using the following protocol: Tls12
+2023-05-23 00:46:19.5647|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMQQSG8DF0CF established using the following protocol: Tls12
+2023-05-23 00:46:19.5747|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7114/swagger/index.html - -
+2023-05-23 00:46:19.5751|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-05-23 00:46:19.5751|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-23 00:46:19.5864|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-05-23 00:46:19.5864|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-05-23 00:46:19.6432|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQSG8DF0CE" completed keep alive response.
+2023-05-23 00:46:19.6439|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 69.8233ms
+2023-05-23 00:46:19.7735|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-05-23 00:46:19.7735|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-05-23 00:46:19.7735|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-05-23 00:46:19.7735|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-05-23 00:46:19.8266|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMQQSG8DF0CE" completed keep alive response.
+2023-05-23 00:46:19.8266|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 53.2073ms
